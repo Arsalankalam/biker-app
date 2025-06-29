@@ -8,7 +8,7 @@ export default function TabbedSection() {
   const tabs = ["Research", "Plan", "Design"];
 
   return (
-    <section className="py-20 px-6 grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto bg-white text-black">
+    <section className="py-24 px-6 grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto bg-white text-black">
       <div>
         <h2 className="text-xl font-bold mb-4">LOREM IPSUM DOLOR SIT AMET</h2>
         <div className="flex  mb-4">

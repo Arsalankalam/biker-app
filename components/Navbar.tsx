@@ -1,14 +1,20 @@
 // components/Navbar.tsx
 const Navbar = () => {
   return (
-    <header className="bg-white shadow-md fixed top-0 w-full z-50 text-black">
-      <nav className="flex items-center justify-between px-8 py-4 bg-white">
+    <header className="bg-white shadow-md px-4 py-3 fixed top-0 w-full z-50 text-black">
+      <nav className="max-w-7xl mx-auto flex justify-between items-center">
     <div className="text-xl font-bold">LOGO</div>
-    <div className="flex space-x-24 text-sm text-gray-700">
-      <a href="#">Home</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
+    <div className="hidden md:flex space-x-6">
+      <a href="#" className="text-gray-700 hover:text-blue-600">Home</a>
+          <a href="#" className="text-gray-700 hover:text-blue-600">Services</a>
+          <a href="#" className="text-gray-700 hover:text-blue-600">Contact</a>
     </div>
+    <div className="md:hidden">
+          {/* Mobile menu button */}
+          <button id="menu-button" className="text-gray-700 focus:outline-none">
+            ☰
+          </button>
+        </div>
     <button className="border border-gray-400 px-4 py-1 rounded text-sm">Sign In</button>
   </nav>
     </header>
@@ -16,3 +22,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
